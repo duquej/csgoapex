@@ -32,6 +32,7 @@
             this.ghostHackButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.wallHacksDeactivate = new System.Windows.Forms.Button();
+            this.debugEnableWalls = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ghostHackLabel
@@ -76,11 +77,22 @@
             this.wallHacksDeactivate.UseVisualStyleBackColor = true;
             this.wallHacksDeactivate.Click += new System.EventHandler(this.WallHacksDeactivate_Click);
             // 
+            // debugEnableWalls
+            // 
+            this.debugEnableWalls.Location = new System.Drawing.Point(468, 57);
+            this.debugEnableWalls.Name = "debugEnableWalls";
+            this.debugEnableWalls.Size = new System.Drawing.Size(172, 29);
+            this.debugEnableWalls.TabIndex = 4;
+            this.debugEnableWalls.Text = "Debug Walls";
+            this.debugEnableWalls.UseVisualStyleBackColor = true;
+            this.debugEnableWalls.Click += new System.EventHandler(this.DebugEnableWalls_Click);
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(705, 99);
+            this.Controls.Add(this.debugEnableWalls);
             this.Controls.Add(this.wallHacksDeactivate);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ghostHackButton);
@@ -99,6 +111,7 @@
         private System.Windows.Forms.Button ghostHackButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button wallHacksDeactivate;
+        private System.Windows.Forms.Button debugEnableWalls;
     }
 }
 

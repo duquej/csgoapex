@@ -252,5 +252,11 @@ namespace csgocheats
         {
 
         }
+
+        private void DebugEnableWalls_Click(object sender, EventArgs e)
+        {
+            WallVis walls = new WallVis();
+            walls.enableWalling();
+        }
     }
 }
